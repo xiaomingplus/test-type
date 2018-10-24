@@ -1,8 +1,6 @@
-# A typescript custom type declaration question
+# 一个typescript自定义模块类型的疑问
 
-[中文版](/readme-zh.md)
-
-Here is my question：When I import a custom type in types/test.d.ts ，tsc will can't compile，it can't find module'testModule',
+我的问题是：只要在 types/test.d.ts 里面import了别的文件里定义的类型，tsc编译就不通过，提示找不到'testModule'模块，如下：
 
 ```bash
 src/index.ts:1:26 - error TS2307: Cannot find module 'testModule'.
@@ -15,7 +13,7 @@ src/index.ts:1:26 - error TS2307: Cannot find module 'testModule'.
 
 ```
 
-## how to run
+## 如何重现
 
 ```bash
 git clone https://github.com/xiaomingplus/test-type.git
