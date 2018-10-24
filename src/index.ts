@@ -1,0 +1,1 @@
+import {someMethod} from 'testModule';
